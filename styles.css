@@ -10,4 +10,58 @@
     
 } 
 
+/* Flexbox Practice */
+
+/* flex-direction
+    row
+    row-reverse
+    column
+    column-reverse
+*/
+
+/* flex-wrap: wrap 
+    Controls direction and multiline of items
+*/
+
+/* background-color
+    VERY GOOD FOR DEBUGGING! (space for element and size)
+*/
+
+/* justfy-content
+    space == positioning
+*/
+
+.flexcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: deepskyblue;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/* Om flexcontainer har barn så kommer alla p inom familjen uppfylla v */
+.flexcontainer > p {
+    background-color: black; /* Bra för att se vart gränserna för padding och margin sätts */
+    color: aliceblue;
+    font-size: 2rem;
+    padding: 16px; /* bara padding = åt alla håll */
+    margin: 16px; /* bara margin = åt alla håll */
+}
+
+/* Grid Practice */
+.grid-container {
+    background-color: skyblue;
+    display: grid;
+
+    column-gap: 50px;
+    row-gap: 50px;
+
+    grid-template-columns: auto auto auto; /* antalet auto = antalet items per column */
+}
+
+.grid-container > p {
+    background-color: black;
+    color: aliceblue;
+    font-size: 2rem;
+}
 
