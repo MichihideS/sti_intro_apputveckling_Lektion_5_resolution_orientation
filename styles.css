@@ -1,0 +1,13 @@
+/* Media Query Practice */
+
+
+@media screen and (max-width: 480px) {
+/*Kommer köras om true*/
+
+    h1 {
+        color: brown;
+    }
+    
+} 
+
+
